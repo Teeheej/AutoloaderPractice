@@ -12,6 +12,6 @@ class Venue extends SpaceTime {
     }
 
     public function startConcert() {
-	echo "\nMost lights are put off. Concert is about to start!\n";
+	echo "\nMost lights are put out. Concert is about to start!\n";
     }
 }
