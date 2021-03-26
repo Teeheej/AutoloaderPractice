@@ -1,6 +1,7 @@
 <?php
 
 spl_autoload_register(function ($class_name) {
+    //your absolute path to Vendor directory here
     $dir_iterator = new RecursiveDirectoryIterator("/Users/vignatov/Sites/slaVendor");
     $iterator = new RecursiveIteratorIterator($dir_iterator, RecursiveIteratorIterator::SELF_FIRST);
 
