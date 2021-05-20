@@ -4,7 +4,7 @@ use MusicEvent\Dudes\Audience;
 use MusicEvent\Dudes\Musician;
 use MusicEvent\Places\Venue;
 
-require_once dirname(__DIR__, 1) . '/autoload.php';
+require_once dirname(__DIR__) . '/autoload.php';
 
 
 $venue = new Venue();
