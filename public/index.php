@@ -1,11 +1,13 @@
 <?php
-
 use MusicEvent\Dudes\Audience;
 use MusicEvent\Dudes\Musician;
 use MusicEvent\Places\Venue;
+use MusicEvent\Things\Instruments\Guitar;
+use MusicEvent\Things\Instruments\Drums;
+use MusicEvent\Things\Instruments\Vocals;
+use MusicEvent\Things\Instruments\Bass;
 
 require_once dirname(__DIR__) . '/autoload.php';
-
 
 $venue = new Venue();
 echo $venue->initiate("Vladivostok", "small", "nice and cozy");
@@ -16,10 +18,10 @@ echo $audience->initiate(245, "psyched about the concert");
 $additional_audience = new Audience();
 echo $additional_audience->initiate(20, "drunk");
 
-$misha = new Musician("Misha", "Guitar");
-$vova = new Musician("Vova", "Drums");
-$roma = new Musician("Roma", "Vocals");
-$sasha = new Musician("Sasha", "Bass");
+$misha = new Musician("Misha", new Guitar());
+$vova = new Musician("Vova", new Drums());
+$roma = new Musician("Roma", new Vocals());
+$sasha = new Musician("Sasha", new Bass());
 
 echo $vova->comeToStage();
 echo $sasha->comeToStage(true);

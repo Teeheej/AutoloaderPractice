@@ -1,10 +1,11 @@
 <?php
-
 namespace MusicEvent\Places;
 
+class SpaceTime
+{
 
-class SpaceTime {
-    public function skipTime($hours) {
+    public function skipTime(int $hours)
+    {
         return "\n\n..." . $hours . " hours later...\n";
     }
 }
